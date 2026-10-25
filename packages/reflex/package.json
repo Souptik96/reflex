@@ -1,0 +1,25 @@
+{
+  "name": "@reflex-ai/reflex",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "node -e \"try { fs.rmSync('dist', { recursive: true, force: true }); } catch {}\""
+  },
+  "dependencies": {
+    "@reflex-ai/core": "workspace:*",
+    "@reflex-ai/jev": "workspace:*",
+    "@reflex-ai/cloudflare": "workspace:*",
+    "@reflex-ai/verify": "workspace:*",
+    "zod": "^3.23.8"
+  }
+}

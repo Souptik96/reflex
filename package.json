@@ -1,0 +1,25 @@
+{
+  "name": "reflex-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reflex: Decision-Gated, Outcome-Verified Agent Runtime using Jev and Cloudflare Code Mode",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "vitest run",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc -b",
+    "release:check": "node scripts/verify-release.ts",
+    "check:zero-any": "node scripts/check-zero-any.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5",
+    "zod": "^3.23.8"
+  },
+  "packageManager": "pnpm@9.7.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

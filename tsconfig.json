@@ -1,0 +1,12 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/jev" },
+    { "path": "./packages/cloudflare" },
+    { "path": "./packages/verify" },
+    { "path": "./packages/reflex" },
+    { "path": "./packages/benchmarks" },
+    { "path": "./packages/cli" }
+  ]
+}
